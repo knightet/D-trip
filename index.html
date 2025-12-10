@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTrip</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tabbar.css">
+    <link rel="stylesheet" href="css/see_all.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/festival.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/p_ticket.css">
+    <link rel="stylesheet" href="css/user_seall.css">
+    <link rel="stylesheet" href="css/route_map.css">
+    <link rel="stylesheet" href="css/favorite.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/m_ticket.css">
+    <link rel="stylesheet" href="css/stamp_map.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/components/tabbar.js" defer></script>
+</head>
+
+<body>
+    <!-- 헤더/검색 컨테이너 -->
+    <header id="header" class="header">
+        <h1 class="logo">DTrip</h1>
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="Search">
+            <span class="search-icon">
+                <img src="assets/icons/search.svg" alt="search" />
+            </span>
+        </div>
+    </header>
+
+    <section id="categoryContainer" class="content-section category-section">
+        <div class="category-wrapper" id="categoryWrapper"></div>
+    </section>
+
+    <section id="tagContainer" class="content-section">
+        <div class="tag-filter" id="tagFilter"></div>
+    </section>
+
+    <main id="content"></main>
+
+    <!-- 탭바 -->
+    <nav id="tabbar" class="tabbar">
+        <div class="tab-item" data-page="home">
+            <img src="assets/tabbar/home.svg">
+            <p>Home</p>
+        </div>
+
+        <div class="tab-item" data-page="map">
+            <img src="assets/tabbar/discover.svg">
+            <p>Info</p>
+        </div>
+
+        <div class="tab-item" data-page="favorite">
+            <img src="assets/tabbar/heart.svg">
+            <p>좋아요</p>
+        </div>
+
+        <div class="tab-item" data-page="menu">
+            <img src="assets/tabbar/menu.svg">
+            <p>메뉴</p>
+        </div>
+    </nav>
+</body>
+
+</html>
